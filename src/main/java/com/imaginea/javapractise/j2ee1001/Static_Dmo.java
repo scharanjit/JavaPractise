@@ -1,0 +1,27 @@
+package j2ee1001;
+//Nice Questioin...remove static etc
+
+class Trial 
+{  
+	static int i; 
+	int getI() 
+	{       return i;
+	} 
+	void setI(int value) 
+	{     
+		i = value;
+	} 
+} 
+public class Static_Dmo 
+{  
+	public static void main(String args[]) 
+	{    
+		Trial t1 = new Trial(); 
+		t1.setI(10); 
+		System.out.println(t1.getI()); 
+		Trial t2 = new Trial(); 
+		t2.setI(100); 
+		System.out.println(t1.getI()); 
+		System.out.println(t2.getI()); 
+	} 
+}
